@@ -24,7 +24,7 @@ echo "5. Exit"
 
 search_record(){
 
-                echo "Which record would you like to search for?"
+                echo "Which employee record would you like to search for?"
                 read -p "please enter name you would like to search for: " name
                 result=$(grep -i "^$name" "CONTACT_FILE")
                 if [ -z "$result" ]; then
@@ -41,14 +41,16 @@ search_record(){
 
 add_record(){
 
- echo "Please enter the following:"
+ echo "New employee login ~ Please enter the following:"
                 read -p "name: " name
                 read -p "address: " address
                 read -p "phone number: " phone
                 read -p "email: " email
+                read -p "employee id number:" id
+                read -p "employee title:" title
                 echo "uploading info..."
-                echo "$name,$address,$phone,$email" >> "CONTACT_FILE"
-                echo "contact added successfully"
+                echo "$name,$address,$phone,$email,$id,$title" >> "CONTACT_FILE"
+                echo "Employee added successfully"
 
         }
                 #ask if they want to add another contact?
