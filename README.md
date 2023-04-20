@@ -8,13 +8,13 @@ reset
 
 print_menu(){
 
-echo "1. Search"
+echo "1. Search for a record"
 
-echo "2. Add"
+echo "2. Add new employee"
 
-echo "3. Delete"
+echo "3. Delete a record"
 
-echo "4. Modify"
+echo "4. Modify employee contact"
 
 echo "5. Exit"
 
