@@ -7,10 +7,10 @@
 
 # show menue function
 sub print_menu{
-  print "1. Search\n";
-  print "2. Add\n";
-  print "3. Delete\n";
-  print "4. Modify\n";
+  print "1. Search For a Record\n";
+  print "2. Add New Employee\n";
+  print "3. Delete a Record\n";
+  print "4. Modify Employee Record\n";
   print "5. Exit\n";
 }
 
@@ -40,7 +40,7 @@ sub show_record{
 
 # add function
 sub add_record(){
-  print "please enter id -> ";
+  print "Name -> ";
   $id = <>; # we will test later if number
   chomp($id); #to remove newline character
   print "please enter full name -> ";
@@ -66,7 +66,7 @@ sub modify_record(){
 }
 
 # program begins here
-print "Welcome to contact app v0....\n";
+print "Welcome to Project Ballin Contact Database app v1!\n";
 print "Please make a choice from the following menue!\n";
 print_menu();    # call show meneu function
 $choice = <>; # read choice
