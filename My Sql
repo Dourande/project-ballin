@@ -1,0 +1,17 @@
+-- Project: Contact Database
+CREATE TABLE customer(
+id INT(20) NOT NULL,
+name CHAR(40) NOT NULL,
+phone CHAR(40) NOT NULL
+);
+-- addding records
+INSERT INTO customer (id, name, phone) VALUES (1001, 'John Kay', '(408) 411-4567'),
+(1002, 'William Foo', '(650) 566-6665'), (1003, 'Kate Bay', '(669) 788-985');
+-- showing records
+SELECT * from customer;
+-- deleting records
+DELETE FROM customer WHERE id = 1001;
+-- modifying records
+-- use ALTER TABLE statement to add, delete, or modify columns in an existing
+table.
+ALTER TABLE customer ADD email CHAR(100);
